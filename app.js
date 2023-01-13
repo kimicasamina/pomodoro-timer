@@ -8,7 +8,7 @@ const tomatoes = document.querySelector(".tomatoes");
 
 let timer;
 let sec = 0;
-let min = 1;
+let min = 0;
 let tomatoCount = 0;
 
 startBtn.addEventListener("click", startTimer);
@@ -23,7 +23,7 @@ function startTimer() {
       min++;
       sec = 0;
     }
-    if (min >= 2) {
+    if (min >= 25) {
       min = 0;
       addTomato();
     }
